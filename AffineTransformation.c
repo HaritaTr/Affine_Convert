@@ -20,7 +20,7 @@ int main()
 	long double lamda1, lamda2;
 
 	// Bilinenleri isteyelim.
-	printf("Ortak stereomodel koordinatları giriniz! \n");
+	printf("\n === Ortak stereomodel koordinatları giriniz! ===\n");
 	// Ox1 değerini isteyelim.
 	printf("Ox1 değerini giriniz: ");
 	scanf("%Lf", &Ox1);
@@ -45,7 +45,7 @@ int main()
 	// Oy4 değerini isteyelim.
 	printf("Oy4 değerini giriniz: ");
 	scanf("%Lf", &Oy4);
-	printf("Ortak arazi koordinatlarını giriniz! \n");
+	printf("\n === Ortak arazi koordinatlarını giriniz! ===\n");
 	// OX1 değerini isteyelim.
 	printf("OX1 değerini giriniz: ");
 	scanf("%Lf", &OX1);
@@ -70,7 +70,7 @@ int main()
 	// OY4 değerini isteyelim.
 	printf("OY4 değerini giriniz: ");
 	scanf("%Lf", &OY4);
-	printf("Steromodel koordinatlar giriniz! \n");
+	printf("\n === Steromodel koordinatlar giriniz! === \n");
 	// x değerini isteyelim.
 	printf("x değerini giriniz: ");
 	scanf("%Lf", &x);
