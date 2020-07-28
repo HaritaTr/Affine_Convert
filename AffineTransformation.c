@@ -14,6 +14,7 @@ int main()
 	double a, b, c, d, e, f;
 	double Xd1, Yd1, Xd2, Yd2, Xd3, Yd3, Xd4, Yd4;
 	double Vx1, Vy1, Vx2, Vy2, Vx3, Vy3, Vx4, Vy4;
+	double X1new, X2new, X3new, X4new, Y1new, Y2new, Y3new, Y4new;
 	double X, Y;
 	double n, mo;
 	double mp;
@@ -113,7 +114,6 @@ int main()
 	Xo4 = OX4 - Xg;
 	Yo4 = OY4 - Yg; */  
 	// Sıralamasını düzelt!!!
-	printf("\n ### Dönüştürülmüş arazi koordinatları! ### \n");
 	xo1 = Ox1 - xg;
 	yo1 = Oy1 - yg;
 	xo2 = Ox2 - xg;
@@ -130,14 +130,15 @@ int main()
 	Yo3 = OY3 - Yg;
 	Xo4 = OX4 - Xg;
 	Yo4 = OY4 - Yg;
-	printf("xo1 değeri: %f\t yo1 değeri: %f\n", xo1, yo1);
-	printf("xo2 değeri: %f\t yo2 değeri: %f\n", xo2, yo2);
-	printf("xo3 değeri: %f\t yo3 değeri: %f\n", xo3, yo3);
-	printf("xo4 değeri: %f\t yo4 değeri: %f\n", xo4, yo4);
-	printf("Xo1 değeri: %f\t Yo1 değeri: %f\n", Xo1, Yo1);
-	printf("Xo2 değeri: %f\t Yo2 değeri: %f\n", Xo2, Yo2);
-	printf("Xo3 değeri: %f\t Yo3 değeri: %f\n", Xo3, Yo3);
-	printf("Xo4 değeri: %f\t Yo4 değeri: %f\n", Xo4, Yo4);
+	//printf("\n ### Dönüştürülmüş arazi koordinatları! ### \n");
+	//printf("xo1 değeri: %f\t yo1 değeri: %f\n", xo1, yo1);
+	//printf("xo2 değeri: %f\t yo2 değeri: %f\n", xo2, yo2);
+	//printf("xo3 değeri: %f\t yo3 değeri: %f\n", xo3, yo3);
+	//printf("xo4 değeri: %f\t yo4 değeri: %f\n", xo4, yo4);
+	//printf("Xo1 değeri: %f\t Yo1 değeri: %f\n", Xo1, Yo1);
+	//printf("Xo2 değeri: %f\t Yo2 değeri: %f\n", Xo2, Yo2);
+	//printf("Xo3 değeri: %f\t Yo3 değeri: %f\n", Xo3, Yo3);
+	//printf("Xo4 değeri: %f\t Yo4 değeri: %f\n", Xo4, Yo4);
 	/*  Ötelenmiş koordinatlar ile dönüşüm parametrelerinin hesaplanması; a, b, c, d, e, f
 	a = ((((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4)) * ((xo1 * Xo1) + (xo2 * Xo2) + (xo3 * Xo3) + (xo4 * Xo4))) - (((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) * ((yo1 * Xo1) + (yo2 * Xo2) + (yo3 * Xo3) + (yo4 * Xo4)))) / ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4))) - ((((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) ^ 2)));
 	b = ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * Xo1) + (yo2 * Xo2) + (yo3 * Xo3) + (yo4 * Xo4))) - (((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) * ((xo1 * Xo1) + (xo2 * Xo2) + (xo3 * Xo3) + (xo4 * Xo4)))) / ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4))) - ((((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) ^ 2)));
@@ -188,7 +189,6 @@ int main()
 	Vy3 = Yd3 - OY3;
 	Vx4 = Xd4 - OX4;
 	Vy4 = Yd4 - OY4; */
-	printf("\n\t    ### Düzeltmeler! ### \n");
 	Vx1 = Xd1 - OX1;
 	Vy1 = Yd1 - OY1;
 	Vx2 = Xd2 - OX2;
@@ -197,6 +197,21 @@ int main()
 	Vy3 = Yd3 - OY3;
 	Vx4 = Xd4 - OX4;
 	Vy4 = Yd4 - OY4;
+	// İlk girilen arazi değerleri ile düzeltmeleri ekleyelim.
+	X1new = Ox1 + Vx1;
+	X2new = Ox2 + Vx2;
+	X3new = Ox3 + Vx3;
+	X4new = Ox4 + Vx4;
+	Y1new = Oy1 + Vy1;
+	Y2new = Oy2 + Vy2;
+	Y3new = Oy3 + Vy3;
+	Y4new = Oy4 + Vy4;
+	printf("\n ### Dönüştürülmüş arazi koordinatları! ### \n");
+	printf("X1new değeri: %f\t Y1new değeri: %f\n", X1new, Y1new);
+	printf("X2new değeri: %f\t Y2new değeri: %f\n", X2new, Y2new);
+	printf("X3new değeri: %f\t Y3new değeri: %f\n", X3new, Y3new);
+	printf("X4new değeri: %f\t Y4new değeri: %f\n", X4new, Y4new);
+	printf("\n\t    ### Düzeltmeler! ### \n");
 	printf("Vx1 değeri: %f\t Vy1 değeri: %f\n", Vx1, Vy1);
 	printf("Vx2 değeri: %f\t Vy2 değeri: %f\n", Vx2, Vy2);
 	printf("Vx3 değeri: %f\t Vy3 değeri: %f\n", Vx3, Vy3);
