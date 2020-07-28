@@ -19,6 +19,7 @@ int main()
 	double n, mo;
 	double mp;
 	double lamda1, lamda2;
+	double Ortmomp;
 
 	// Bilinenleri isteyelim.
 	printf(" === Ortak stereomodel koordinatları giriniz! ===\n");
@@ -236,24 +237,27 @@ int main()
 	n, mo;
 	n = 4;
 	mo = Sqrt(((Vx1 ^ 2) + (Vx2 ^ 2) +(Vx3 ^ 2) + (Vx4 ^ 2) + (Vy1 ^ 2) + (Vy2 ^ 2) + (Vy3 ^ 2) +(Vy4 ^ 2)) / ((2 * n) - 6)); */
-	printf("\n");
 	n = 4;
 	mo = pow(((pow(Vx1, 2) + pow(Vx2, 2) +pow(Vx3, 2) + pow(Vx4, 2) + pow(Vy1, 2) + pow(Vy2, 2) + pow(Vy3, 2) +pow(Vy4, 2)) / ((2 * n) - 6)), 0.5);
-	printf("mo değeri: %f\n", mo);
 	/* Konum ortalama hatasının hesaplanması;
 	mp;
 	mp =Sqrt(((Vx1 ^ 2) + (Vx2 ^ 2) +(Vx3 ^ 2) + (Vx4 ^ 2) + (Vy1 ^ 2) + (Vy2 ^ 2) + (Vy3 ^ 2) +(Vy4 ^ 2)) / (n - 3)); */
-	printf("\n");
 	mp =pow(((pow(Vx1, 2) + pow(Vx2, 2) +pow(Vx3, 2) + pow(Vx4, 2) + pow(Vy1, 2) + pow(Vy2, 2) + pow(Vy3, 2) +pow(Vy4, 2)) / (n - 3)), 0.5);
-	printf("mp değeri: %f\n", mp);
 	/* Ölçek hesaplanması; 
 	lamda1, lamda2;
 	lamda1 = Sqrt((a^2) + (d^2));
 	lamda2 = Sqrt((b^2) + (e^2)); */
-	printf("\n");
 	lamda1 = pow((pow(a, 2) + pow(d, 2)), 0.5);
-	printf("lamda1 değeri: %f\n", lamda1);
 	lamda2 = pow((pow(b, 2) + pow(e, 2)), 0.5);
+	// Koordinat (mo) ve Konum (mp) ortalama hatasını hesaplayalım.
+	Ortmomp = pow(((pow(mo, 2) + pow(mp, 2)) / (2 * n - 6)), 0.5);
+	printf("Koordinat (mo) ve Konum (mp) ortalama hatası: %f\n", Ortmomp);
+	printf("\n");
+	printf("mo değeri: %f\n", mo);
+	printf("\n");
+	printf("mp değeri: %f\n", mp);
+	printf("\n");
+	printf("lamda1 değeri: %f\n", lamda1);
 	printf("lamda2 değeri: %f\n", lamda2);
 
 	return 0;
