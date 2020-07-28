@@ -6,77 +6,77 @@ int main()
 {
 	setlocale(LC_ALL, "Turkish");
 
-	long double Ox1, Ox2, Ox3, Ox4, Oy1, Oy2, Oy3, Oy4;
-	long double OX1, OX2, OX3, OX4, OY1, OY2, OY3, OY4;
-	long double x, y;
-	long double xg, yg, Xg, Yg;
-	long double xo1, yo1, xo2, yo2, xo3, yo3, xo4, yo4, Xo1, Yo1, Xo2, Yo2, Xo3, Yo3, Xo4, Yo4;
-	long double a, b, c, d, e, f;
-	long double Xd1, Yd1, Xd2, Yd2, Xd3, Yd3, Xd4, Yd4;
-	long double Vx1, Vy1, Vx2, Vy2, Vx3, Vy3, Vx4, Vy4;
-	long double X, Y;
-	long double n, mo;
-	long double mp;
-	long double lamda1, lamda2;
+	double Ox1, Ox2, Ox3, Ox4, Oy1, Oy2, Oy3, Oy4;
+	double OX1, OX2, OX3, OX4, OY1, OY2, OY3, OY4;
+	double x, y;
+	double xg, yg, Xg, Yg;
+	double xo1, yo1, xo2, yo2, xo3, yo3, xo4, yo4, Xo1, Yo1, Xo2, Yo2, Xo3, Yo3, Xo4, Yo4;
+	double a, b, c, d, e, f;
+	double Xd1, Yd1, Xd2, Yd2, Xd3, Yd3, Xd4, Yd4;
+	double Vx1, Vy1, Vx2, Vy2, Vx3, Vy3, Vx4, Vy4;
+	double X, Y;
+	double n, mo;
+	double mp;
+	double lamda1, lamda2;
 
 	// Bilinenleri isteyelim.
 	printf(" === Ortak stereomodel koordinatları giriniz! ===\n");
 	// Ox1 değerini isteyelim.
 	printf("Ox1 değerini giriniz: ");
-	scanf("%Lf", &Ox1);
+	scanf("%lf", &Ox1);
 	// Ox2 değerini isteyelim.
 	printf("Ox2 değerini giriniz: ");
-	scanf("%Lf", &Ox2);
+	scanf("%lf", &Ox2);
 	// Ox3 değerini isteyelim.
 	printf("Ox3 değerini giriniz: ");
-	scanf("%Lf", &Ox3);
+	scanf("%lf", &Ox3);
 	// Ox4 değerini isteyelim.
 	printf("Ox4 değerini giriniz: ");
-	scanf("%Lf", &Ox4);
+	scanf("%lf", &Ox4);
 	// Oy1 değerini isteyelim.
 	printf("Oy1 değerini giriniz: ");
-	scanf("%Lf", &Oy1);
+	scanf("%lf", &Oy1);
 	// Oy2 değerini isteyelim.
 	printf("Oy2 değerini giriniz: ");
-	scanf("%Lf", &Oy2);
+	scanf("%lf", &Oy2);
 	// Oy3 değerini isteyelim.
 	printf("Oy3 değerini giriniz: ");
-	scanf("%Lf", &Oy3);
+	scanf("%lf", &Oy3);
 	// Oy4 değerini isteyelim.
 	printf("Oy4 değerini giriniz: ");
-	scanf("%Lf", &Oy4);
+	scanf("%lf", &Oy4);
 	printf("\n === Ortak arazi koordinatlarını giriniz! ===\n");
 	// OX1 değerini isteyelim.
 	printf("OX1 değerini giriniz: ");
-	scanf("%Lf", &OX1);
+	scanf("%lf", &OX1);
 	// OX2 değerini isteyelim.
 	printf("OX2 değerini giriniz: ");
-	scanf("%Lf", &OX2);
+	scanf("%lf", &OX2);
 	// OX3 değerini isteyelim.
 	printf("OX3 değerini giriniz: ");
-	scanf("%Lf", &OX3);
+	scanf("%lf", &OX3);
 	// OX4 değerini isteyelim.
 	printf("OX4 değerini giriniz: ");
-	scanf("%Lf", &OX4);
+	scanf("%lf", &OX4);
 	// OY1 değerini isteyelim.
 	printf("OY1 değerini giriniz: ");
-	scanf("%Lf", &OY1);
+	scanf("%lf", &OY1);
 	// OY2 değerini isteyelim.
 	printf("OY2 değerini giriniz: ");
-	scanf("%Lf", &OY2);
+	scanf("%lf", &OY2);
 	// OY3 değerini isteyelim.
 	printf("OY3 değerini giriniz: ");
-	scanf("%Lf", &OY3);
+	scanf("%lf", &OY3);
 	// OY4 değerini isteyelim.
 	printf("OY4 değerini giriniz: ");
-	scanf("%Lf", &OY4);
+	scanf("%lf", &OY4);
 	printf("\n === Steromodel koordinatlar giriniz! === \n");
 	// x değerini isteyelim.
 	printf("x değerini giriniz: ");
-	scanf("%Lf", &x);
+	scanf("%lf", &x);
 	// y değerini isteyelim.
 	printf("y değerini giriniz: ");
-	scanf("%Lf", &y);
+	scanf("%lf", &y);
 
 	// Bilinmeyenleri hesaplama.
 	/* a,b,c,d dönüşüm parametrelerinin hesaplanması;
@@ -130,14 +130,14 @@ int main()
 	Yo3 = OY3 - Yg;
 	Xo4 = OX4 - Xg;
 	Yo4 = OY4 - Yg;
-	printf("xo1 değeri: %Lf\t yo1 değeri: %Lf\n", xo1, yo1);
-	printf("xo2 değeri: %Lf\t yo2 değeri: %Lf\n", xo2, yo2);
-	printf("xo3 değeri: %Lf\t yo3 değeri: %Lf\n", xo3, yo3);
-	printf("xo4 değeri: %Lf\t yo4 değeri: %Lf\n", xo4, yo4);
-	printf("Xo1 değeri: %Lf\t Yo1 değeri: %Lf\n", Xo1, Yo1);
-	printf("Xo2 değeri: %Lf\t Yo2 değeri: %Lf\n", Xo2, Yo2);
-	printf("Xo3 değeri: %Lf\t Yo3 değeri: %Lf\n", Xo3, Yo3);
-	printf("Xo4 değeri: %Lf\t Yo4 değeri: %Lf\n", Xo4, Yo4);
+	printf("xo1 değeri: %f\t yo1 değeri: %f\n", xo1, yo1);
+	printf("xo2 değeri: %f\t yo2 değeri: %f\n", xo2, yo2);
+	printf("xo3 değeri: %f\t yo3 değeri: %f\n", xo3, yo3);
+	printf("xo4 değeri: %f\t yo4 değeri: %f\n", xo4, yo4);
+	printf("Xo1 değeri: %f\t Yo1 değeri: %f\n", Xo1, Yo1);
+	printf("Xo2 değeri: %f\t Yo2 değeri: %f\n", Xo2, Yo2);
+	printf("Xo3 değeri: %f\t Yo3 değeri: %f\n", Xo3, Yo3);
+	printf("Xo4 değeri: %f\t Yo4 değeri: %f\n", Xo4, Yo4);
 	/*  Ötelenmiş koordinatlar ile dönüşüm parametrelerinin hesaplanması; a, b, c, d, e, f
 	a = ((((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4)) * ((xo1 * Xo1) + (xo2 * Xo2) + (xo3 * Xo3) + (xo4 * Xo4))) - (((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) * ((yo1 * Xo1) + (yo2 * Xo2) + (yo3 * Xo3) + (yo4 * Xo4)))) / ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4))) - ((((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) ^ 2)));
 	b = ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * Xo1) + (yo2 * Xo2) + (yo3 * Xo3) + (yo4 * Xo4))) - (((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) * ((xo1 * Xo1) + (xo2 * Xo2) + (xo3 * Xo3) + (xo4 * Xo4)))) / ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4))) - ((((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) ^ 2)));
@@ -197,10 +197,10 @@ int main()
 	Vy3 = Yd3 - OY3;
 	Vx4 = Xd4 - OX4;
 	Vy4 = Yd4 - OY4;
-	printf("Vx1 değeri: %Lf\t Vy1 değeri: %Lf\n", Vx1, Vy1);
-	printf("Vx2 değeri: %Lf\t Vy2 değeri: %Lf\n", Vx2, Vy2);
-	printf("Vx3 değeri: %Lf\t Vy3 değeri: %Lf\n", Vx3, Vy3);
-	printf("Vx4 değeri: %Lf\t Vy4 değeri: %Lf\n", Vx4, Vy4);
+	printf("Vx1 değeri: %f\t Vy1 değeri: %f\n", Vx1, Vy1);
+	printf("Vx2 değeri: %f\t Vy2 değeri: %f\n", Vx2, Vy2);
+	printf("Vx3 değeri: %f\t Vy3 değeri: %f\n", Vx3, Vy3);
+	printf("Vx4 değeri: %f\t Vy4 değeri: %f\n", Vx4, Vy4);
 	/* Ortak noktalar dışındaki, diğer stereomodel koordinatlarına karşılık gelen arazi koordinatlarının hesaplanması (Afin Dönüşümü ile);
 	X, Y;
 	X = (a * x) + (b * y) + c;
@@ -208,15 +208,15 @@ int main()
 	X = (a * x) + (b * y) + c;
 	Y = (d * x) + (e * y) + f;
 	printf("\n");
-	printf("X değeri: %Lf\n", X);
-	printf("Y değeri: %Lf\n", Y);
+	printf("X değeri: %f\n", X);
+	printf("Y değeri: %f\n", Y);
 	printf("\n");
-	printf("a değeri: %Lf\n", a);
-	printf("b değeri: %Lf\n", b);
-	printf("c değeri: %Lf\n", c);
-	printf("d değeri: %Lf\n", d);
-	printf("e değeri: %Lf\n", e);
-	printf("f değeri: %Lf\n", f);
+	printf("a değeri: %f\n", a);
+	printf("b değeri: %f\n", b);
+	printf("c değeri: %f\n", c);
+	printf("d değeri: %f\n", d);
+	printf("e değeri: %f\n", e);
+	printf("f değeri: %f\n", f);
 	/* Bir Koordinatın ortalama hatasının hesaplanması;
 	n, mo;
 	n = 4;
@@ -224,22 +224,22 @@ int main()
 	printf("\n");
 	n = 4;
 	mo = pow(((pow(Vx1, 2) + pow(Vx2, 2) +pow(Vx3, 2) + pow(Vx4, 2) + pow(Vy1, 2) + pow(Vy2, 2) + pow(Vy3, 2) +pow(Vy4, 2)) / ((2 * n) - 6)), 0.5);
-	printf("mo değeri: %Lf\n", mo);
+	printf("mo değeri: %f\n", mo);
 	/* Konum ortalama hatasının hesaplanması;
 	mp;
 	mp =Sqrt(((Vx1 ^ 2) + (Vx2 ^ 2) +(Vx3 ^ 2) + (Vx4 ^ 2) + (Vy1 ^ 2) + (Vy2 ^ 2) + (Vy3 ^ 2) +(Vy4 ^ 2)) / (n - 3)); */
 	printf("\n");
 	mp =pow(((pow(Vx1, 2) + pow(Vx2, 2) +pow(Vx3, 2) + pow(Vx4, 2) + pow(Vy1, 2) + pow(Vy2, 2) + pow(Vy3, 2) +pow(Vy4, 2)) / (n - 3)), 0.5);
-	printf("mp değeri: %Lf\n", mp);
+	printf("mp değeri: %f\n", mp);
 	/* Ölçek hesaplanması; 
 	lamda1, lamda2;
 	lamda1 = Sqrt((a^2) + (d^2));
 	lamda2 = Sqrt((b^2) + (e^2)); */
 	printf("\n");
 	lamda1 = pow((pow(a, 2) + pow(d, 2)), 0.5);
-	printf("lamda1 değeri: %Lf\n", lamda1);
+	printf("lamda1 değeri: %f\n", lamda1);
 	lamda2 = pow((pow(b, 2) + pow(e, 2)), 0.5);
-	printf("lamda2 değeri: %Lf\n", lamda2);
+	printf("lamda2 değeri: %f\n", lamda2);
 
 	return 0;
 }
