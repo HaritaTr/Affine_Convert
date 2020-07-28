@@ -20,7 +20,7 @@ int main()
 	long double lamda1, lamda2;
 
 	// Bilinenleri isteyelim.
-	printf("\n === Ortak stereomodel koordinatları giriniz! ===\n");
+	printf(" === Ortak stereomodel koordinatları giriniz! ===\n");
 	// Ox1 değerini isteyelim.
 	printf("Ox1 değerini giriniz: ");
 	scanf("%Lf", &Ox1);
@@ -85,6 +85,7 @@ int main()
 	yg = (Oy1 + Oy2 + Oy3 + Oy4) / 4;
 	Xg = (OX1 + OX2 + OX3 + OX4) / 4;
 	Yg = (OY1 + OY2 + OY3 + OY4) / 4; */
+	printf("\n");
 	xg = (Ox1 + Ox2 + Ox3 + Ox4) / 4;
 	printf("xg değeri: %Lf\n", xg);
 	yg = (Oy1 + Oy2 + Oy3 + Oy4) / 4;
@@ -111,6 +112,7 @@ int main()
 	Yo3 = OY3 - Yg;
 	Xo4 = OX4 - Xg;
 	Yo4 = OY4 - Yg; */
+	printf("\n");
 	xo1 = Ox1 - xg;
 	printf("xo1 değeri: %Lf\n", xo1);
 	yo1 = Oy1 - yg;
@@ -150,6 +152,7 @@ int main()
 	d = ((((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4)) * ((xo1 * Yo1) + (xo2 * Yo2) + (xo3 * Yo3) + (xo4 * Yo4))) - (((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) * ((yo1 * Yo1) + (yo2 * Yo2) + (yo3 * Yo3) + (yo4 * Yo4)))) / ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4))) - ((((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) ^ 2)));
 	e = ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * Yo1) + (yo2 * Yo2) + (yo3 * Yo3) + (yo4 * Yo4))) - (((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) * ((xo1 * Yo1) + (xo2 * Yo2) + (xo3 * Yo3) + (xo4 * Yo4)))) / ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4))) - ((((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) ^ 2)));
 	f = Yg - (d * xg) - (e * yg); */
+	printf("\n");
 	a = ((((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4)) * ((xo1 * Xo1) + (xo2 * Xo2) + (xo3 * Xo3) + (xo4 * Xo4))) - (((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) * ((yo1 * Xo1) + (yo2 * Xo2) + (yo3 * Xo3) + (yo4 * Xo4)))) / ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4))) - (pow(((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)), 2)));
 	printf("a değeri: %Lf\n", a);
 	b = ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * Xo1) + (yo2 * Xo2) + (yo3 * Xo3) + (yo4 * Xo4))) - (((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) * ((xo1 * Xo1) + (xo2 * Xo2) + (xo3 * Xo3) + (xo4 * Xo4)))) / ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4))) - (pow(((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)), 2)));
@@ -172,6 +175,7 @@ int main()
 	Yd3 = (d * Ox3) + (e * Oy3) + f;
 	Xd4 = (a * Ox4) + (b * Oy4) + c;
 	Yd4 = (d * Ox4) + (e * Oy4) + f; */
+	printf("\n");
 	Xd1 = (a * Ox1) + (b * Oy1) + c;
 	printf("Xd1 değeri: %Lf\n", Xd1);
 	Yd1 = (d * Ox1) + (e * Oy1) + f;
@@ -198,6 +202,7 @@ int main()
 	Vy3 = Yd3 - OY3;
 	Vx4 = Xd4 - OX4;
 	Vy4 = Yd4 - OY4; */
+	printf("\n");
 	Vx1 = Xd1 - OX1;
 	printf("Vx1 değeri: %Lf\n", Vx1);
 	Vy1 = Yd1 - OY1;
@@ -218,6 +223,7 @@ int main()
 	X, Y;
 	X = (a * x) + (b * y) + c;
 	Y = (d * x) + (e * y) + f; */
+	printf("\n");
 	X = (a * x) + (b * y) + c;
 	printf("X değeri: %Lf\n", X);
 	Y = (d * x) + (e * y) + f;
@@ -226,18 +232,21 @@ int main()
 	n, mo;
 	n = 4;
 	mo = Sqrt(((Vx1 ^ 2) + (Vx2 ^ 2) +(Vx3 ^ 2) + (Vx4 ^ 2) + (Vy1 ^ 2) + (Vy2 ^ 2) + (Vy3 ^ 2) +(Vy4 ^ 2)) / ((2 * n) - 6)); */
+	printf("\n");
 	n = 4;
 	mo = pow(((pow(Vx1, 2) + pow(Vx2, 2) +pow(Vx3, 2) + pow(Vx4, 2) + pow(Vy1, 2) + pow(Vy2, 2) + pow(Vy3, 2) +pow(Vy4, 2)) / ((2 * n) - 6)), 0.5);
 	printf("mo değeri: %Lf\n", mo);
 	/* Konum ortalama hatasının hesaplanması;
 	mp;
 	mp =Sqrt(((Vx1 ^ 2) + (Vx2 ^ 2) +(Vx3 ^ 2) + (Vx4 ^ 2) + (Vy1 ^ 2) + (Vy2 ^ 2) + (Vy3 ^ 2) +(Vy4 ^ 2)) / (n - 3)); */
+	printf("\n");
 	mp =pow(((pow(Vx1, 2) + pow(Vx2, 2) +pow(Vx3, 2) + pow(Vx4, 2) + pow(Vy1, 2) + pow(Vy2, 2) + pow(Vy3, 2) +pow(Vy4, 2)) / (n - 3)), 0.5);
 	printf("mp değeri: %Lf\n", mp);
 	/* Ölçek hesaplanması; 
 	lamda1, lamda2;
 	lamda1 = Sqrt((a^2) + (d^2));
 	lamda2 = Sqrt((b^2) + (e^2)); */
+	printf("\n");
 	lamda1 = pow((pow(a, 2) + pow(d, 2)), 0.5);
 	printf("lamda1 değeri: %Lf\n", lamda1);
 	lamda2 = pow((pow(b, 2) + pow(e, 2)), 0.5);
