@@ -145,19 +145,12 @@ int main()
 	d = ((((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4)) * ((xo1 * Yo1) + (xo2 * Yo2) + (xo3 * Yo3) + (xo4 * Yo4))) - (((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) * ((yo1 * Yo1) + (yo2 * Yo2) + (yo3 * Yo3) + (yo4 * Yo4)))) / ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4))) - ((((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) ^ 2)));
 	e = ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * Yo1) + (yo2 * Yo2) + (yo3 * Yo3) + (yo4 * Yo4))) - (((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) * ((xo1 * Yo1) + (xo2 * Yo2) + (xo3 * Yo3) + (xo4 * Yo4)))) / ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4))) - ((((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) ^ 2)));
 	f = Yg - (d * xg) - (e * yg); */
-	printf("\n");
 	a = ((((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4)) * ((xo1 * Xo1) + (xo2 * Xo2) + (xo3 * Xo3) + (xo4 * Xo4))) - (((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) * ((yo1 * Xo1) + (yo2 * Xo2) + (yo3 * Xo3) + (yo4 * Xo4)))) / ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4))) - (pow(((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)), 2)));
-	printf("a değeri: %Lf\n", a);
 	b = ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * Xo1) + (yo2 * Xo2) + (yo3 * Xo3) + (yo4 * Xo4))) - (((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) * ((xo1 * Xo1) + (xo2 * Xo2) + (xo3 * Xo3) + (xo4 * Xo4)))) / ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4))) - (pow(((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)), 2)));
-	printf("b değeri: %Lf\n", b);
 	c = Xg - (a * xg) - (b * yg);
-	printf("c değeri: %Lf\n", c);
 	d = ((((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4)) * ((xo1 * Yo1) + (xo2 * Yo2) + (xo3 * Yo3) + (xo4 * Yo4))) - (((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) * ((yo1 * Yo1) + (yo2 * Yo2) + (yo3 * Yo3) + (yo4 * Yo4)))) / ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4))) - (pow(((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)), 2)));
-	printf("d değeri: %Lf\n", d);
 	e = ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * Yo1) + (yo2 * Yo2) + (yo3 * Yo3) + (yo4 * Yo4))) - (((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)) * ((xo1 * Yo1) + (xo2 * Yo2) + (xo3 * Yo3) + (xo4 * Yo4)))) / ((((xo1 * xo1) + (xo2 * xo2) + (xo3 * xo3) + (xo4 * xo4)) * ((yo1 * yo1) + (yo2 * yo2) + (yo3 * yo3) + (yo4 * yo4))) - (pow(((xo1 * yo1) + (xo2 * yo2) + (xo3 * yo3) + (xo4 * yo4)), 2)));
-	printf("e değeri: %Lf\n", e);
 	f = Yg - (d * xg) - (e * yg);
-	printf("f değeri: %Lf\n", f);
 	/* Ortak noktaların Dönüştürülmüş Koordinatlarının hesaplanması(Afin Dönüşümü ile); 
 	Xd1, Yd1, Xd2, Yd2, Xd3, Yd3, Xd4, Yd4;
 	Xd1 = (a * Ox1) + (b * Oy1) + c;
@@ -212,11 +205,18 @@ int main()
 	X, Y;
 	X = (a * x) + (b * y) + c;
 	Y = (d * x) + (e * y) + f; */
-	printf("\n");
 	X = (a * x) + (b * y) + c;
-	printf("X değeri: %Lf\n", X);
 	Y = (d * x) + (e * y) + f;
+	printf("\n");
+	printf("X değeri: %Lf\n", X);
 	printf("Y değeri: %Lf\n", Y);
+	printf("\n");
+	printf("a değeri: %Lf\n", a);
+	printf("b değeri: %Lf\n", b);
+	printf("c değeri: %Lf\n", c);
+	printf("d değeri: %Lf\n", d);
+	printf("e değeri: %Lf\n", e);
+	printf("f değeri: %Lf\n", f);
 	/* Bir Koordinatın ortalama hatasının hesaplanması;
 	n, mo;
 	n = 4;
