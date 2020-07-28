@@ -85,15 +85,15 @@ int main()
 	yg = (Oy1 + Oy2 + Oy3 + Oy4) / 4;
 	Xg = (OX1 + OX2 + OX3 + OX4) / 4;
 	Yg = (OY1 + OY2 + OY3 + OY4) / 4; */
-	printf("\n");
+	//printf("\n");
 	xg = (Ox1 + Ox2 + Ox3 + Ox4) / 4;
-	printf("xg değeri: %Lf\n", xg);
+	//printf("xg değeri: %Lf\n", xg);
 	yg = (Oy1 + Oy2 + Oy3 + Oy4) / 4;
-	printf("yg değeri: %Lf\n", yg);
+	//printf("yg değeri: %Lf\n", yg);
 	Xg = (OX1 + OX2 + OX3 + OX4) / 4;
-	printf("Xg değeri: %Lf\n", Xg);
+	//printf("Xg değeri: %Lf\n", Xg);
 	Yg = (OY1 + OY2 + OY3 + OY4) / 4;
-	printf("Yg değeri: %Lf\n", Yg);
+	//printf("Yg değeri: %Lf\n", Yg);
 	/* Ortak noktaların Ötelenmiş koordinatlarının hesaplanması;
 	xo1, yo1, xo2, yo2, xo3, yo3, xo4, yo4, Xo1, Yo1, Xo2, Yo2, Xo3, Yo3, Xo4, Yo4
 	xo1 = Ox1 - xg;
@@ -111,8 +111,9 @@ int main()
 	Xo3 = OX3 - Xg;
 	Yo3 = OY3 - Yg;
 	Xo4 = OX4 - Xg;
-	Yo4 = OY4 - Yg; */
-	printf("\n");
+	Yo4 = OY4 - Yg; */  
+	// Sıralamasını düzelt!!!
+	printf("\n ### Dönüştürülmüş arazi koordinatları! ### \n");
 	xo1 = Ox1 - xg;
 	printf("xo1 değeri: %Lf\n", xo1);
 	yo1 = Oy1 - yg;
@@ -175,23 +176,23 @@ int main()
 	Yd3 = (d * Ox3) + (e * Oy3) + f;
 	Xd4 = (a * Ox4) + (b * Oy4) + c;
 	Yd4 = (d * Ox4) + (e * Oy4) + f; */
-	printf("\n");
+	//printf("\n");
 	Xd1 = (a * Ox1) + (b * Oy1) + c;
-	printf("Xd1 değeri: %Lf\n", Xd1);
+	//printf("Xd1 değeri: %Lf\n", Xd1);
 	Yd1 = (d * Ox1) + (e * Oy1) + f;
-	printf("Yd1 değeri: %Lf\n", Yd1);
+	//printf("Yd1 değeri: %Lf\n", Yd1);
 	Xd2 = (a * Ox2) + (b * Oy2) + c;
-	printf("Xd2 değeri: %Lf\n", Xd2);
+	//printf("Xd2 değeri: %Lf\n", Xd2);
 	Yd2 = (d * Ox2) + (e * Oy2) + f;
-	printf("Yd2 değeri: %Lf\n", Yd2);
+	//printf("Yd2 değeri: %Lf\n", Yd2);
 	Xd3 = (a * Ox3) + (b * Oy3) + c;
-	printf("Xd3 değeri: %Lf\n", Xd3);
+	//printf("Xd3 değeri: %Lf\n", Xd3);
 	Yd3 = (d * Ox3) + (e * Oy3) + f;
-	printf("Yd3 değeri: %Lf\n", Yd3);
+	//printf("Yd3 değeri: %Lf\n", Yd3);
 	Xd4 = (a * Ox4) + (b * Oy4) + c;
-	printf("Xd4 değeri: %Lf\n", Xd4);
+	//printf("Xd4 değeri: %Lf\n", Xd4);
 	Yd4 = (d * Ox4) + (e * Oy4) + f;
-	printf("Yd4 değeri: %Lf\n", Yd4);
+	//printf("Yd4 değeri: %Lf\n", Yd4);
 	/* Ortak Noktaların Koordinatlarına getirilecek düzeltmelerin hesaplanması;
 	Vx1, Vy1, Vx2, Vy2, Vx3, Vy3, Vx4, Vy4;
 	Vx1 = Xd1 - OX1;
@@ -202,7 +203,7 @@ int main()
 	Vy3 = Yd3 - OY3;
 	Vx4 = Xd4 - OX4;
 	Vy4 = Yd4 - OY4; */
-	printf("\n");
+	printf("\n ### Düzeltmeler! ### \n");
 	Vx1 = Xd1 - OX1;
 	printf("Vx1 değeri: %Lf\n", Vx1);
 	Vy1 = Yd1 - OY1;
