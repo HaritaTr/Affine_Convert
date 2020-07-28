@@ -20,62 +20,62 @@ int main()
 	long double lamda1, lamda2;
 
 	// Bilinenleri isteyelim.
-	printf("Ortak stereomodel koordinatları giriniz: \n");
+	printf("Ortak stereomodel koordinatları giriniz! \n");
 	// Ox1 değerini isteyelim.
-	printf("Ox1 değerini giriniz: \n");
+	printf("Ox1 değerini giriniz: ");
 	scanf("%Lf", &Ox1);
 	// Ox2 değerini isteyelim.
-	printf("Ox2 değerini giriniz: \n");
+	printf("Ox2 değerini giriniz: ");
 	scanf("%Lf", &Ox2);
 	// Ox3 değerini isteyelim.
-	printf("Ox3 değerini giriniz: \n");
+	printf("Ox3 değerini giriniz: ");
 	scanf("%Lf", &Ox3);
 	// Ox4 değerini isteyelim.
-	printf("Ox4 değerini giriniz: \n");
+	printf("Ox4 değerini giriniz: ");
 	scanf("%Lf", &Ox4);
 	// Oy1 değerini isteyelim.
-	printf("Oy1 değerini giriniz: \n");
+	printf("Oy1 değerini giriniz: ");
 	scanf("%Lf", &Oy1);
 	// Oy2 değerini isteyelim.
-	printf("Oy2 değerini giriniz: \n");
+	printf("Oy2 değerini giriniz: ");
 	scanf("%Lf", &Oy2);
 	// Oy3 değerini isteyelim.
-	printf("Oy3 değerini giriniz: \n");
+	printf("Oy3 değerini giriniz: ");
 	scanf("%Lf", &Oy3);
 	// Oy4 değerini isteyelim.
-	printf("Oy4 değerini giriniz: \n");
+	printf("Oy4 değerini giriniz: ");
 	scanf("%Lf", &Oy4);
-	printf("Ortak arazi koordinatlarını giriniz: \n");
+	printf("Ortak arazi koordinatlarını giriniz! \n");
 	// OX1 değerini isteyelim.
-	printf("OX1 değerini giriniz: \n");
+	printf("OX1 değerini giriniz: ");
 	scanf("%Lf", &OX1);
 	// OX2 değerini isteyelim.
-	printf("OX2 değerini giriniz: \n");
+	printf("OX2 değerini giriniz: ");
 	scanf("%Lf", &OX2);
 	// OX3 değerini isteyelim.
-	printf("OX3 değerini giriniz: \n");
+	printf("OX3 değerini giriniz: ");
 	scanf("%Lf", &OX3);
 	// OX4 değerini isteyelim.
-	printf("OX4 değerini giriniz: \n");
+	printf("OX4 değerini giriniz: ");
 	scanf("%Lf", &OX4);
 	// OY1 değerini isteyelim.
-	printf("OY1 değerini giriniz: \n");
+	printf("OY1 değerini giriniz: ");
 	scanf("%Lf", &OY1);
 	// OY2 değerini isteyelim.
-	printf("OY2 değerini giriniz: \n");
+	printf("OY2 değerini giriniz: ");
 	scanf("%Lf", &OY2);
 	// OY3 değerini isteyelim.
-	printf("OY3 değerini giriniz: \n");
+	printf("OY3 değerini giriniz: ");
 	scanf("%Lf", &OY3);
 	// OY4 değerini isteyelim.
-	printf("OY4 değerini giriniz: \n");
+	printf("OY4 değerini giriniz: ");
 	scanf("%Lf", &OY4);
-	printf("Steromodel koordinatlar giriniz: \n");
+	printf("Steromodel koordinatlar giriniz! \n");
 	// x değerini isteyelim.
-	printf("x değerini giriniz: \n");
+	printf("x değerini giriniz: ");
 	scanf("%Lf", &x);
 	// y değerini isteyelim.
-	printf("y değerini giriniz: \n");
+	printf("y değerini giriniz: ");
 	scanf("%Lf", &y);
 
 	// Bilinmeyenleri hesaplama.
