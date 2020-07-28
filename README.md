@@ -10,7 +10,7 @@ Yazılımı çalıştırdığınız zaman;
 Yukarıdaki değerlerin girilmesi,
 
 Steromodel Koordinatlar; x , y
--[] Yukarıdaki değerlerinde girilmesi gerekmektedir. Değerler girildikten hemen sonra kendisi otomatik hesaplar.
+- [ ] Yukarıdaki değerlerinde girilmesi gerekmektedir. Değerler girildikten hemen sonra kendisi otomatik hesaplar.
 
 *Hesaplanan;*
 - Afin dönüşüm parametreleri; a,b,c,d,e,f
