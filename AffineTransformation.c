@@ -19,7 +19,6 @@ int main()
 	double n, mo;
 	double mp;
 	double lamda1, lamda2;
-	double Ortmomp;
 
 	// Bilinenleri isteyelim.
 	printf(" === Ortak stereomodel koordinatları giriniz! ===\n");
@@ -249,9 +248,6 @@ int main()
 	lamda2 = Sqrt((b^2) + (e^2)); */
 	lamda1 = pow((pow(a, 2) + pow(d, 2)), 0.5);
 	lamda2 = pow((pow(b, 2) + pow(e, 2)), 0.5);
-	// Koordinat (mo) ve Konum (mp) ortalama hatasını hesaplayalım.
-	Ortmomp = pow(((pow(mo, 2) + pow(mp, 2)) / (2 * n - 6)), 0.5);
-	printf("Koordinat (mo) ve Konum (mp) ortalama hatası: %f\n", Ortmomp);
 	printf("\n");
 	printf("mo değeri: %f\n", mo);
 	printf("\n");
