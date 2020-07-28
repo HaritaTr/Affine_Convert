@@ -1,0 +1,2 @@
+# Afin
+Fotogrametrik Afin Dönüşümü
