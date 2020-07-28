@@ -198,14 +198,14 @@ int main()
 	Vx4 = Xd4 - OX4;
 	Vy4 = Yd4 - OY4;
 	// İlk girilen arazi değerleri ile düzeltmeleri ekleyelim.
-	X1new = Ox1 + Vx1;
-	X2new = Ox2 + Vx2;
-	X3new = Ox3 + Vx3;
-	X4new = Ox4 + Vx4;
-	Y1new = Oy1 + Vy1;
-	Y2new = Oy2 + Vy2;
-	Y3new = Oy3 + Vy3;
-	Y4new = Oy4 + Vy4;
+	X1new = OX1 + Vx1;
+	X2new = OX2 + Vx2;
+	X3new = OX3 + Vx3;
+	X4new = OX4 + Vx4;
+	Y1new = OY1 + Vy1;
+	Y2new = OY2 + Vy2;
+	Y3new = OY3 + Vy3;
+	Y4new = OY4 + Vy4;
 	printf("\n ### Dönüştürülmüş arazi koordinatları! ### \n");
 	printf("X1new değeri: %f\t Y1new değeri: %f\n", X1new, Y1new);
 	printf("X2new değeri: %f\t Y2new değeri: %f\n", X2new, Y2new);
