@@ -1,5 +1,4 @@
-# Afin
-Fotogrametrik Afin Dönüşümü
+# Fotogrametrik Afin Dönüşümü
 
 **Yazılım Kullanım Rehberi;**
 
