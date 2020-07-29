@@ -1,6 +1,6 @@
 # Afin Dönüşümü
 
-**Amaç**
+### **Amaç**
 
 Dört parametreli Helmert Benzerlik Dönüşümü yerine, fotogrametride bazı problemlerin çözümünde altı parametreli Afin Dönüşümü uygulanır. Fotogrametride, mutlak Yöneltme tam olarak yapılmamışsa, model koordinatların arazi koordinatlarına  afin dönüşümü ile dönüştürülmesi daha uygun olmaktadır.
 
@@ -8,7 +8,7 @@ Yazılım, Stereomodel koordinatları ve Arazi Koordinatları bilinen 4 ortak no
 
 NOT: Koordinatlar arasında korelasyon yok ve herbir koordinat eşit ağırlıklı olarak düşünülmelidir.
 
-**Kullanım Rehberi;**
+### **Kullanım Rehberi;**
 
 Yazılımı çalıştırdığınız zaman;
 
