@@ -1,4 +1,11 @@
-# Fotogrametrik Afin Dönüşümü
+# Afin Dönüşümü
+
+**Amaç**
+Dört parametreli Helmert Benzerlik Dönüşümü yerine, fotogrametride bazı problemlerin çözümünde altı parametreli Afin Dönüşümü uygulanır. Fotogrametride, mutlak Yöneltme tam olarak yapılmamışsa, model koordinatların arazi koordinatlarına  afin dönüşümü ile dönüştürülmesi daha uygun olmaktadır.
+
+Yazılım, Stereomodel koordinatları ve Arazi Koordinatları bilinen 4 ortak nokta yardımı ile dönüşüm katsayılarını hesaplamakta ve bu katsayılar ile diğer stereomodel koordinatlarının başka sistemdeki arazi koordinatlarını hesaplamaya (Afin Dönüşümü)yardımcı olmak amaçlı kullanılmaktadır.
+
+NOT: Koordinatlar arasında korelasyon yok ve herbir koordinat eşit ağırlıklı olarak düşünülmelidir.
 
 **Yazılım Kullanım Rehberi;**
 
