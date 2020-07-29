@@ -6,7 +6,7 @@ Dört parametreli Helmert Benzerlik Dönüşümü yerine, fotogrametride bazı p
 
 Yazılım, Stereomodel koordinatları ve Arazi Koordinatları bilinen 4 ortak nokta yardımı ile dönüşüm katsayılarını hesaplamakta ve bu katsayılar ile diğer stereomodel koordinatlarının başka sistemdeki arazi koordinatlarını hesaplamaya (Afin Dönüşümü)yardımcı olmak amaçlı kullanılmaktadır.
 
-NOT: Koordinatlar arasında korelasyon yok ve herbir koordinat eşit ağırlıklı olarak düşünülmelidir.
+**NOT:** Koordinatlar arasında korelasyon yok ve herbir koordinat eşit ağırlıklı olarak düşünülmelidir.
 
 ### **Kullanım Rehberi;**
 
